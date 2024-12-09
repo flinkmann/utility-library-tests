@@ -1,0 +1,25 @@
+{
+  "name": "utility-library-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "test-and-coverage": "c8 --all mocha"
+  },
+  "c8": {
+    "src": ["src"],
+    "exclude": ["src/.internal", "test"],
+    "reporter": ["text", "lcov"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "c8": "^10.1.2",
+    "chai": "^5.1.2",
+    "coveralls": "^3.1.1",
+    "mocha": "^11.0.1"
+  }
+}
