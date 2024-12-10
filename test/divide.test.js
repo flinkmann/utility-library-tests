@@ -1,5 +1,6 @@
-const { expect } = require('chai');
-const divide = require('../src/divide.js');
+import { expect } from 'chai';
+import divide from '../src/divide.js';
+
 
 describe('divide', function() {
   it('should return the quotient of two positive numbers', function() {

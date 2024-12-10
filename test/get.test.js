@@ -1,5 +1,6 @@
-const { expect } = require('chai');
-const get = require('../path/to/your/get'); // Adjust the path to your get function
+import { expect } from 'chai';
+import get from '../src/get.js';
+
 
 describe('get', function() {
   it('should return the product with the given ID', function() {

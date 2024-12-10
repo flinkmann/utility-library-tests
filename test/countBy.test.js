@@ -1,5 +1,5 @@
-const { expect } = require('chai');
-const countBy = require('../src/countBy.js');
+import { expect } from 'chai';
+import countBy from '../src/countBy.js';
 
 describe('countBy', function() {
   it('should count elements by the given criterion', function() {

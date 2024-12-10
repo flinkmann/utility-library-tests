@@ -1,5 +1,5 @@
-const { expect } = require('chai');
-const compact = require('../src/compact.js');
+import { expect } from 'chai';
+import compact from '../src/compact.js';
 
 describe('compact', function() {
   it('should remove all falsy values from the array', function() {

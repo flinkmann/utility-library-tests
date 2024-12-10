@@ -1,5 +1,6 @@
-const { expect } = require('chai');
-const filter = require('../src/filter.js');
+import { expect } from 'chai';
+import filter from '../src/filter.js';
+
 
 describe('filter', function() {
   it('Should return only active products', function() {
