@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const countBy = require('../path/to/your/countBy'); // Adjust the path to your countBy function
+const countBy = require('../src/countBy.js');
 
 describe('countBy', function() {
   it('should count elements by the given criterion', function() {

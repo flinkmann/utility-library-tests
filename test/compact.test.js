@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const compact = require('../path/to/your/compact'); // Adjust the path to your compact function
+const compact = require('../src/compact.js');
 
 describe('compact', function() {
   it('should remove all falsy values from the array', function() {

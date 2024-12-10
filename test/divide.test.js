@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const divide = require('../path/to/your/divide'); // Adjust the path to your divide function
+const divide = require('../src/divide.js');
 
 describe('divide', function() {
   it('should return the quotient of two positive numbers', function() {
