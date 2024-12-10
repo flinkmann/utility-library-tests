@@ -37,7 +37,6 @@ describe('filter', function() {
       { name: 'Product 2', active: false },
       { name: 'Product 3', active: true }
     ];
-    // const result = filter(products, null);
     expect(() => filter(products, null)).to.throw(TypeError, 'predicate is not a function');
   });
 

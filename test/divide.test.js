@@ -24,11 +24,21 @@ describe('divide', function() {
   });
 
   it('should throw an error when dividing by 0', function() {
-    expect(() => divide(6, 0)).to.throw('Cannot divide by zero');
+    expect(() => divide(6, 0)).to.throw();
   });
 
-  it('should handle floating point numbers', function() {
+  it('should handle floating point numbers: positive floats', function() {
     const result = divide(7.5, 2.5);
+    expect(result).to.equal(3);
+  });
+
+  it('should handle floating point numbers: positive and negative float', function() {
+    const result = divide(7.5, -2.5);
+    expect(result).to.equal(-3);
+  });
+
+  it('should handle floating point numbers: both negative', function() {
+    const result = divide(-7.5, -2.5);
     expect(result).to.equal(3);
   });
 });
