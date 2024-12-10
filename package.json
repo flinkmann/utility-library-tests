@@ -8,6 +8,10 @@
     "test": "mocha",
     "test-and-coverage": "c8 --all mocha"
   },
+  "mocha": {
+    "reporter": "mochawesome",
+    "reporter-options": ["reportFilename=test-report", "json=false"]
+  },
   "c8": {
     "src": ["src"],
     "exclude": ["src/.internal", "test"],
@@ -20,6 +24,7 @@
     "c8": "^10.1.2",
     "chai": "^5.1.2",
     "coveralls": "^3.1.1",
-    "mocha": "^11.0.1"
+    "mocha": "^11.0.1",
+	"mochawesome": "^7.1.3"
   }
 }
