@@ -10,12 +10,23 @@
   },
   "mocha": {
     "reporter": "mochawesome",
-    "reporter-options": ["reportFilename=test-report", "json=false"]
+    "reporter-options": [
+      "reportFilename=test-report",
+      "json=false"
+    ]
   },
   "c8": {
-    "src": ["src"],
-    "exclude": ["src/.internal", "test"],
-    "reporter": ["text", "lcov"]
+    "src": [
+      "src"
+    ],
+    "exclude": [
+      "src/.internal",
+      "test"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -25,6 +36,6 @@
     "chai": "^5.1.2",
     "coveralls": "^3.1.1",
     "mocha": "^11.0.1",
-	  "mochawesome": "^7.1.3"
+    "mochawesome": "^7.1.3"
   }
 }
