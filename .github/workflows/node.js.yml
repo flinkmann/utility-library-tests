@@ -30,6 +30,7 @@ jobs:
     - run: npm run test-and-coverage
     
     - name: coveralls reports
+      if: always()
       uses: coverallsapp/github-action@v2
       with:
         github-token: ${{ github.token }}
